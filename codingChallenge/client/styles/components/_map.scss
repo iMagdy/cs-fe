@@ -1,0 +1,20 @@
+$content_width: calc(100vw - 100px);
+
+.map-title{
+    width: $content_width;
+    margin: 15px auto;
+    color: $orange;
+    font-size: 24px;
+}
+.map-container {
+    position: absolute;
+    width: $content_width;
+    height: calc(100vh - 200px);
+    margin: auto;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: $off_white;
+    color:$dark_gray;
+}

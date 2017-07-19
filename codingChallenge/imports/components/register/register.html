@@ -1,0 +1,10 @@
+<form ng-submit="submitRegister(userRegisterData)" class="custom-form form-register">
+    <h1 class="custom-form__heading text-muted">Register</h1>
+    <input type="text" ng-model="userRegisterData.name" class="form-control" name="regName" placeholder="Username">
+    <input type="email" ng-model="userRegisterData.mail" class="form-control" name="regEmail" placeholder="Email address">
+    <input type="password" ng-model="userRegisterData.pass" class="form-control" name="regPassword" placeholder="Password">
+    <input class="btn btn-lg btn-primary btn-block" type="submit" value="Register" />
+    <div class="custom-form__option">
+        Back to <a ui-sref="login">Login</a>
+    </div>
+</form>

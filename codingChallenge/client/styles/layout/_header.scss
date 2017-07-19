@@ -1,0 +1,63 @@
+.main-header {
+    background-color: $dark_blue;
+    background: linear-gradient(to right, $light_blue, $dark_blue) fixed;
+    background: -webkit-linear-gradient(to right, $light_blue, $dark_blue) fixed;
+    color: #fff;
+    width: 100%;
+    padding: 10px 20px;
+    border-left: 20px solid $orange;
+    color: #f6f6f6;
+    .logo-icon {
+        float: left;
+        line-height: 2;
+        font-size: 22px;
+    }
+    .logo-title {
+        float: left;
+        margin: 10px;
+        font-weight: 100;
+        font-size: 28px;
+    }
+    .user-box {
+        display: inline-block;
+        float: right;
+        position: relative;
+        margin-top: 8px;
+        &__icon {
+            position: absolute;
+            background-color: $light_gray;
+            color: $dark_blue;
+            padding: 4px;
+            font-size: 12px;
+            left: -30px;
+            top: 8px;
+        }
+        &__menu {
+            height: 37px;
+            padding-top: 9px;
+            display: inline-block;
+            float: right;
+            font-weight: bold;
+            >a {
+                color: $light_gray;
+            }
+            .caret {
+                border-top: 4px dashed $light_gray;
+            }
+        }
+        .dropdown-menu {
+            right: 0;
+            top: 100%;
+            left: auto;
+            width: auto;
+            border: none;
+            border-radius: 0;
+            position: absolute;
+            background-color: $off_white;
+            a {
+                color: $dark_blue;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+// Styles for base elements
+
+body {
+    background: $light_blue;
+    background: -webkit-linear-gradient(to left, $light_blue, $dark_blue) fixed;
+    background: linear-gradient(to left, $light_blue, $dark_blue) fixed;
+    font-family: "Comfortaa", sans-serif;
+}
