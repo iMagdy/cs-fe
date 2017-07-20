@@ -1,7 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import angular from 'angular';
 import angularMeteor from 'angular-meteor';
-import uiRouter from 'angular-ui-router';
+import uiRouter from '@uirouter/angularjs';
 import template from './login.html';
 
 const name = 'loginForm';
