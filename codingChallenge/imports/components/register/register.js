@@ -15,7 +15,7 @@ export default angular.module(name, [
         controllerAs: name,
         controller: ['$scope', '$state', function($scope, $state) {
             if (Meteor.userId() !== null) {
-                $state.go('map');
+                $state.go('events');
             }
             $scope.submitRegister = function(user) {
                 Accounts.createUser({
@@ -23,7 +23,7 @@ export default angular.module(name, [
                     email: user.mail,
                     password: user.pass
                 });
-                $state.go("map");
+                $state.go("events");
             };
         }
 
