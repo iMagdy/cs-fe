@@ -1,0 +1,23 @@
+<header class="container main-header clearfix">
+    <i class="logo-icon glyphicon glyphicon-globe"></i>
+    <h1 class="logo-title">Events Map</h1>
+
+    <div class="user-box" ng-if="userId">
+        <span class="user-box__menu dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="user-box-icon glyphicon glyphicon-user"></i>
+                {{username}}
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li ng-click="logOut()"><a href="#">Logout</a></li>
+        </ul>
+        </span>
+    </div>
+</header>
+
+<div ui-view></div>
+
+<footer class="main-footer">
+    <a href="https://www.linkedin.com/in/abdallahzac">Developed by: Abdallah Zakzouk</a>
+</footer>

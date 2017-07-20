@@ -1,0 +1,10 @@
+<form ng-submit="submitLogin(userLoginData)" class="custom-form form-signin">
+    <h1 class="custom-form__heading text-muted">Sign In</h1>
+    <p ng-show="loginErr" class="custom-form__error">{{loginErr}}</p>
+    <input type="email" ng-model="userLoginData.mail" class="form-control" name="loginEmail" placeholder="Email address">
+    <input type="password" ng-model="userLoginData.pass" class="form-control" name="loginPassword" placeholder="Password">
+    <input class="btn btn-lg btn-primary btn-block" type="submit" value="Sign In" />
+    <div class="custom-form__option">
+        Don't have account? <a ui-sref="register">Register now!</a>
+    </div>
+</form>
