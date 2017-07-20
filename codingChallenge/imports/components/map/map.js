@@ -99,7 +99,7 @@ export default angular.module(name, [
                                             var events = response.data.data;
                                             events.forEach(function(event, index) {
                                                 // check if event has a specified location
-                                                if (event.place.location) {
+                                                if (event.place && event.place.location) {
                                                     if(JSON.stringify(event.place.location).indexOf(state) > -1){
                                                         var evLat = event.place.location.latitude;
                                                         var evLng = event.place.location.longitude;
